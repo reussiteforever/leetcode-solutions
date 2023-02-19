@@ -1,21 +1,10 @@
-# SOLUTION 1
-<!-- Describe your first thoughts on how to solve this problem. -->
-
-### Approach
-<!-- Describe your approach to solving the problem. -->
+/* SOLUTION 1
 * First, we loop through the given array of integers.
 * For each element of the array, we calculate the rest of target minus current element.
 * We look for the rest element within the array of integers. If it exists then we get his index.
 * The last thing to do it's checking if the rest element exists within the given array and if its index it's different from the current element index.
-### Complexity
-- Time complexity:
-<!-- Add your time complexity here, e.g. $$O(n)$$ -->
-O(n)
-- Space complexity:
-<!-- Add your space complexity here, e.g. $$O(n)$$ -->
-O(n)
-### Code
-```
+*/
+
 /**
  * @param {number[]} nums
  * @param {number} target
@@ -30,23 +19,8 @@ var twoSum = function(nums, target) {
     }
     return result;
 };
-```
 
-# SOLUTION 2
-<!-- Describe your first thoughts on how to solve this problem. -->
-
-### Approach
-<!-- Describe your approach to solving the problem. -->
-Same approach as the first solution but here we truncate the given array before checking the existence of the rest within the array of integers.
-### Complexity
-- Time complexity:
-<!-- Add your time complexity here, e.g. $$O(n)$$ -->
-O(n)
-- Space complexity:
-<!-- Add your space complexity here, e.g. $$O(n)$$ -->
-O(n)
-### Code
-```
+//  SOLUTION 2
 /**
  * @param {number[]} nums
  * @param {number} target
@@ -62,4 +36,3 @@ var twoSum = function(nums, target) {
     }
     return result;
 };
-```
